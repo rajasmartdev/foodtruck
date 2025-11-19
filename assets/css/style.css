@@ -470,7 +470,7 @@
 
 .about-section {
   position: relative;
-  padding: 319px 0px 150px;
+  padding: 180px 0px 0px;
   /* background-color: var(--main-color-two); */
   background-position: top center;
   background-repeat: no-repeat;
@@ -687,7 +687,7 @@
   position: relative;
   overflow: hidden;
   /* padding: 130px 0px 120px; */
-  padding: 150px 0;
+  padding: 50px 0;
 }
 
 .services-section .section-icons-outer {
@@ -877,6 +877,7 @@
   color: var(--main-color-two);
 }
 
+
 /*** 
 
 ====================================================================
@@ -888,7 +889,7 @@
 .choose-section {
   position: relative;
   overflow: hidden;
-  padding: 150px 0px;
+  padding: 50px 0px 0px;
   background-color: var(--main-color-two);
 }
 
@@ -1108,9 +1109,9 @@
 .choose-section .content-column .choose-list li:before {
   position: absolute;
   content: "";
-  left: 29px;
-  top: 20px;
-  bottom: -45px;
+  left: 25px;
+  top: 10px;
+  bottom: -35px;
   width: 2px;
   opacity: 0.5;
   border-right: 2px dashed var(--main-color);
@@ -1139,16 +1140,16 @@
 .choose-section .content-column .choose-list li .number {
   position: absolute;
   left: 10px;
-  top: 16px;
-  width: 40px;
-  height: 40px;
+  top: 1px;
+  width: 30px;
+  height: 30px;
   z-index: 1;
   font-weight: 700;
   text-align: center;
   border-radius: 50px;
   display: inline-block;
   line-height: 40px;
-  font-size: var(--font-24);
+  font-size: var(--font-16);
   color: var(--white-color);
   background-color: var(--main-color);
   font-family: var(--font-family-Ubuntu);
@@ -1168,10 +1169,10 @@
 .choose-section .content-column .choose-list li .number:before {
   position: absolute;
   content: "";
-  left: -10px;
-  top: -10px;
-  width: 60px;
-  height: 60px;
+  left: -4px;
+  top: -4px;
+  width: 38px;
+  height: 38px;
   opacity: 0.4;
   z-index: -1;
   border-radius: 50px;
@@ -1181,10 +1182,10 @@
 .choose-section .content-column .choose-list li .number:after {
   position: absolute;
   content: "";
-  left: -5px;
-  top: -5px;
-  width: 50px;
-  height: 50px;
+  left: -3px;
+  top: 0px;
+  width: 34px;
+  height: 34px;
   opacity: 0.4;
   z-index: -1;
   border-radius: 50px;
@@ -1908,7 +1909,7 @@
 .awards-section {
   position: relative;
   overflow: hidden;
-  padding: 150px 0px;
+  padding: 50px 0px;
   background-color: var(--main-color-two);
 }
 
@@ -7615,12 +7616,12 @@ button:hover svg {
   }
 
   .choose-section .content-column .text {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .choose-section .content-column .choose-list li {
     margin-bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 
   .choose-section .content-column .choose-list li strong {
@@ -10037,3 +10038,176 @@ select.custom-select-box {
 .nice-select.custom-select-box.insurence-form-border {
   border: 1px solid #d8e4f1;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-4, .col-md-6 {
+    display: flex;
+}
+.insurance-card {
+            border-radius: 12px;
+            padding: 40px 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            height: 100%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .insurance-card .icon-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .insurance-card .icon-box i {
+            font-size: 40px;
+            color: white;
+        }
+
+        .insurance-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .insurance-card p {
+            color: #6c757d;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* All Cards - White by default */
+        .insurance-card {
+            background: white;
+        }
+
+        .insurance-card .icon-box {
+            background: #3498db;
+        }
+
+        /* Hover Effect - Dark Blue Gradient */
+        .insurance-card:hover {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(44, 62, 80, 0.3);
+        }
+
+        .insurance-card:hover h3,
+        .insurance-card:hover p {
+            color: white;
+        }
+
+        .insurance-card:hover .icon-box {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.1);
+        }
+
+        /* Icon styling */
+        .icon-box svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+
+        @media (max-width: 768px) {
+            .insurance-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        .benefits-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .benefits-section .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .benefits-section .navigation-arrows {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .benefits-section .arrow {
+            color: #5ba3d0;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .benefits-section .section-label {
+            color: #5ba3d0;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .benefits-section .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #2d2d2d;
+            margin-top: 15px;
+        }
+
+        .benefits-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            padding: 50px 30px;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .benefit-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: #888;
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .benefit-text {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .benefits-section .section-title {
+                font-size: 32px;
+            }
+
+            .benefit-item {
+                margin-bottom: 40px;
+            }
+
+            .benefits-card {
+                padding: 40px 20px;
+            }
+        }
