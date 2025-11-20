@@ -877,7 +877,6 @@
   color: var(--main-color-two);
 }
 
-
 /*** 
 
 ====================================================================
@@ -2009,8 +2008,6 @@
 
 .award-block .inner-box:hover .icon {
   color: var(--main-color);
-  background-color: var(--white-color);
-  border-color: var(--white-color);
   -webkit-transform: scale(-1) rotate(180deg);
   -moz-transform: scale(-1) rotate(180deg);
   -ms-transform: scale(-1) rotate(180deg);
@@ -9908,8 +9905,6 @@ select.custom-select-box {
   padding: 6px 20px 6px 70px;
 }
 
-
-
 .nice-select {
   height: 55px;
   line-height: 45px;
@@ -9938,7 +9933,8 @@ select.custom-select-box {
   transform-origin: 50% 0;
   -webkit-transform: scale(0.75) translateY(-21px);
   transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
   transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
   z-index: 9;
   min-height: 50px;
@@ -9968,7 +9964,8 @@ select.custom-select-box {
   width: 100%;
 }
 
-.nice-select .option.focus, .nice-select .option.selected.focus {
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
   color: black !important;
 }
 
@@ -10014,200 +10011,235 @@ select.custom-select-box {
   display: block;
 }
 
-.main-footer .nice-select{
+.main-footer .nice-select {
   position: relative;
-    display: block;
-    width: 100%;
-    line-height: 20px;
-    font-weight: 400;
-    padding: 14px 22px;
-    border-radius: 4px;
-    z-index: 1;
-    height: 50px;
-    background: none;
-    -webkit-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    transition: all 300ms ease;
-    font-size: var(--font-14);
-    background: transparent;
-    color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 14px 22px;
+  border-radius: 4px;
+  z-index: 1;
+  height: 50px;
+  background: none;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-size: var(--font-14);
+  background: transparent;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .nice-select.custom-select-box.insurence-form-border {
   border: 1px solid #d8e4f1;
 }
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.col-lg-4, .col-md-6 {
-    display: flex;
+.col-lg-4,
+.col-md-6 {
+  display: flex;
 }
 .insurance-card {
-            border-radius: 12px;
-            padding: 40px 30px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            height: 100%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
+  border-radius: 12px;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-        .insurance-card .icon-box {
-            width: 80px;
-            height: 80px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 25px;
-            transition: all 0.3s ease;
-        }
+.insurance-card .icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
 
-        .insurance-card .icon-box i {
-            font-size: 40px;
-            color: white;
-        }
+.insurance-card .icon-box i {
+  font-size: 40px;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
 
-        .insurance-card h3 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
+.insurance-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  z-index: 2;
+  position: relative;
+}
 
-        .insurance-card p {
-            color: #6c757d;
-            line-height: 1.6;
-            margin: 0;
-        }
+.insurance-card p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
 
-        /* All Cards - White by default */
-        .insurance-card {
-            background: white;
-        }
+/* All Cards - White by default */
+.insurance-card {
+  background: white;
+}
 
-        .insurance-card .icon-box {
-            background: #3498db;
-        }
+.insurance-card .icon-box {
+  background: #3498db;
+}
 
-        /* Hover Effect - Dark Blue Gradient */
-        .insurance-card:hover {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(44, 62, 80, 0.3);
-        }
+/* Hover Effect - Dark Blue Gradient */
+.insurance-card {
+  position: relative;
+  overflow: hidden; /* optional but useful */
+}
 
-        .insurance-card:hover h3,
-        .insurance-card:hover p {
-            color: white;
-        }
+.insurance-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
 
-        .insurance-card:hover .icon-box {
-            background: rgba(255,255,255,0.2);
-            transform: scale(1.1);
-        }
+.insurance-card:hover {
+  background: url("../img/bg.jpg") no-repeat center/cover;
+  transform: translateY(-10px);
+}
 
-        /* Icon styling */
-        .icon-box svg {
-            width: 40px;
-            height: 40px;
-            fill: white;
-        }
+.insurance-card:hover::after {
+  background-color: #002448;
+  opacity: 0.7;
+}
 
-        @media (max-width: 768px) {
-            .insurance-card {
-                margin-bottom: 20px;
-            }
-        }
+.insurance-card:hover .icon-box i{
+  color: white;
+  opacity: 1;
+}
 
-        .benefits-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
+.insurance-card:hover h3,
+.insurance-card:hover p {
+  color: white;
+  opacity: 1;
+}
 
-        .benefits-section .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+.insurance-card:hover .icon-box {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
 
-        .benefits-section .navigation-arrows {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
+/* Icon styling */
+.icon-box svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
 
-        .benefits-section .arrow {
-            color: #5ba3d0;
-            font-size: 24px;
-            font-weight: 300;
-        }
+@media (max-width: 768px) {
+  .insurance-card {
+    margin-bottom: 20px;
+  }
+}
 
-        .benefits-section .section-label {
-            color: #5ba3d0;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
+.benefits-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-        .benefits-section .section-title {
-            font-size: 42px;
-            font-weight: 700;
-            color: #2d2d2d;
-            margin-top: 15px;
-        }
+.benefits-section .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-        .benefits-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-            padding: 50px 30px;
-        }
+.benefits-section .navigation-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
 
-        .benefit-item {
-            text-align: center;
-            padding: 0 15px;
-        }
+.benefits-section .arrow {
+  color: #5ba3d0;
+  font-size: 24px;
+  font-weight: 300;
+}
 
-        .benefit-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.benefits-section .section-label {
+  color: #5ba3d0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
-        .benefit-icon svg {
-            width: 100%;
-            height: 100%;
-            stroke: #888;
-            stroke-width: 1.5;
-            fill: none;
-        }
+.benefits-section .section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-top: 15px;
+}
 
-        .benefit-text {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.5;
-        }
+.benefits-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 50px 30px;
+}
 
-        @media (max-width: 768px) {
-            .benefits-section .section-title {
-                font-size: 32px;
-            }
+.benefit-item {
+  text-align: center;
+  padding: 0 15px;
+}
 
-            .benefit-item {
-                margin-bottom: 40px;
-            }
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-            .benefits-card {
-                padding: 40px 20px;
-            }
-        }
+.benefit-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #888;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.benefit-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .benefits-section .section-title {
+    font-size: 32px;
+  }
+
+  .benefit-item {
+    margin-bottom: 40px;
+  }
+
+  .benefits-card {
+    padding: 40px 20px;
+  }
+}
